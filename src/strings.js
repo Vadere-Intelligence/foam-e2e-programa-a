@@ -15,3 +15,8 @@ export function capitalize(text) {
 export function titleCase(text) {
   return String(text).split(" ").map(capitalize).join(" ");
 }
+
+/** Devuelve true si el texto, sin espacios al principio ni al final, está vacío. */
+export function isBlank(text) {
+  return String(text).trim() === "";
+}
