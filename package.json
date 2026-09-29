@@ -1,0 +1,10 @@
+{
+  "name": "foam-e2e-programa-a",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Repositorio desechable de la prueba E2E de FOAM #165 (ADR-012 P7).",
+  "scripts": {
+    "test": "node --test"
+  }
+}
