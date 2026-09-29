@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { capitalize, trim } from "../src/strings.js";
+import { capitalize, titleCase, trim } from "../src/strings.js";
 
 test("trim quita espacios", () => {
   assert.equal(trim("  hola "), "hola");
@@ -16,4 +16,12 @@ test("capitalize deja igual una palabra ya capitalizada", () => {
 
 test("capitalize devuelve cadena vacía para cadena vacía", () => {
   assert.equal(capitalize(""), "");
+});
+
+test("titleCase capitaliza cada palabra", () => {
+  assert.equal(titleCase("hola mundo feliz"), "Hola Mundo Feliz");
+});
+
+test("titleCase devuelve cadena vacía para cadena vacía", () => {
+  assert.equal(titleCase(""), "");
 });
